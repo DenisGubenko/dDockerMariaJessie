@@ -72,8 +72,8 @@ RUN echo "deb https://repo.percona.com/apt jessie main" > /etc/apt/sources.list.
 		echo 'Pin-Priority: 998'; \
 	} > /etc/apt/preferences.d/percona
 
-ENV MARIADB_MAJOR 10.1
-ENV MARIADB_VERSION 10.1.33+maria-1~jessie
+ENV MARIADB_MAJOR 10.3
+ENV MARIADB_VERSION 10.3.9+maria~jessie
 
 RUN echo "deb http://ftp.osuosl.org/pub/mariadb/repo/$MARIADB_MAJOR/debian jessie main" > /etc/apt/sources.list.d/mariadb.list \
 	&& { \
